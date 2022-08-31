@@ -6,6 +6,9 @@ let i = 0; //counter
 document.addEventListener("DOMContentLoaded", counting);
 
 function counting() {
+  if (array.length >= 9) {
+    array.pop();
+  }
   array.unshift(i);
   console.log(array);
   i++;
