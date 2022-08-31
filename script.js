@@ -6,7 +6,9 @@ let i = 0; //counter
 document.addEventListener("DOMContentLoaded", counting);
 
 function counting() {
+  array.unshift(i);
+  console.log(array);
   i++;
-  console.log(i);
+  //console.log(i);
   setTimeout(counting, 1000);
 }
